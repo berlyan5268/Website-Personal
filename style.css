@@ -44,6 +44,21 @@
     box-sizing: border-box;
     font-family: POPPINS, sans-serif;
 }
+/* Untuk layar kecil (smartphone kecil) */
+@media only screen and (max-width: 480px) {
+  body {
+    font-size: 14px;
+    margin: 0 10px;
+  }
+}
+
+/* Untuk layar sedang (smartphone sedang) */
+@media only screen and (max-width: 768px) {
+  body {
+    font-size: 16px;
+    margin: 0 20px;
+  }
+}
 
 /* Base Styles */
 body {
