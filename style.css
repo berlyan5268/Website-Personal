@@ -14,7 +14,7 @@
 
 @media only screen and (max-width: 768px) {
     .home-content, .about-content, .certifications-content, .experience-content, .riwayat-sekolah-content {
-      padding: 10px;
+      padding: 20px;
     }
   
     table {
@@ -289,14 +289,15 @@ body {
 }
 
 .home {
-    height: 100vh;
-    background: linear-gradient(-90deg, #031540 65%,#fff 35%);
+    height: auto; /* Ubah dari 100vh agar sesuai dengan konten */
+    background: linear-gradient(-90deg, #031540 65%, #fff 35%);
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap; /* Tambahkan agar elemen bisa menyesuaikan */
     align-items: center;
-    padding: 100px 10%;
-    padding-top: 150px; /* Memberikan jarak dari navbar */
+    justify-content: center;
+    padding: 50px 5%; /* Kurangi padding */
 }
+
 
 .home-image {
     display: flex;
@@ -346,9 +347,11 @@ body {
     }
 }
 
-.home-image img {
-    position: relative;
-    max-width: 550px;
+.home-image {
+    width: 300px;
+    height: 300px;
+    border: 15px solid #fff; /* Kurangi ukuran border */
+    outline: 15px solid #031540;
 }
 
 .home-image:hover img {
