@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ketua KKN</title>
+    <link rel="stylesheet" href="kkn.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    
+    <header class="header">
+        <div class="container">
+            <a href="#" class="logo">KKN Kedung Halang</a>
+            <nav class="navbar">
+                <a href="#" class="active">Home</a>
+                
+                <a href="#Struktur">Struktur</a>
+                <a href="#Headline">Headline</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Video Section -->
+    <section class="video-container">
+        <video autoplay muted loop >
+            <source src="kknvidio.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="video-overlay-text">
+        </div>
+    </section>
+
+      
+
+    <!-- Modal for displaying larger image and description -->
+    <div id="modal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <button class="prev" onclick="changeImage(-1)">&#10094;</button>
+        <img class="modal-content" id="modal-img">
+        <button class="next" onclick="changeImage(1)">&#10095;</button>
+        <div id="caption" class="caption"></div>
+        <button class="exit" onclick="closeModal()">Keluar</button> <!-- Tombol Keluar -->
+    </div>
+
+       
+
+     <!-- Galeri Foto -->
+        <section id="Struktur">
+            <h2>STRUKTUR KABINET KERJA</h2>
+            <div class="gallery-container">
+                <div class="gallery-item">
+                    <img src="foto1.jpg" alt="Kegiatan 1">
+                </div>
+                
+        </section>
+        <main class="main-content">
+            <section class="team-section">
+                <h2>Ketua dan Wakil</h2>
+                <div class="team-row">
+                    <div class="team-member">
+                        <img src="foto2.jpg" alt="Ketua KKN">
+                    </div>
+                    <div class="team-member">
+                        <img src="foto3.jpg" alt="Wakil Ketua">
+                    </div>
+                </div>
+            </section>
+    
+            <section class="team-section">
+                <h2>Sekretaris</h2>
+                <div class="team-row">
+                    <div class="team-member">
+                        <img src="foto4.jpg" alt="Sekretaris 1">
+                    </div>
+                    <div class="team-member">
+                        <img src="foto5.jpg" alt="Sekretaris 2">
+                    </div>
+                </div>
+            </section>
+    
+            <section class="team-section">
+                <h2>Bendahara</h2>
+                <div class="team-row">
+                    <div class="team-member">
+                        <img src="foto6.jpg" alt="Bendahara 1">
+                    </div>
+                    <div class="team-member">
+                        <img src="foto7.jpg" alt="Bendahara 2">
+                    </div>
+                </div>
+            </section>
+    
+            <section class="team-section">
+                <h2>Humas</h2>
+                <div class="team-row">
+                    <div class="team-member">
+                        <img src="foto8.jpg" alt="Humas 1">
+                    </div>
+                    <div class="team-member">
+                        <img src="foto9.jpg" alt="Humas 2">
+                    </div>
+                    <div class="team-member">
+                        <img src="foto10.jpg" alt="Humas 3">
+                    </div>
+                    <div class="team-member">
+                        <img src="foto11.jpg" alt="Humas 4">
+                    </div>
+                </div>
+            </section>
+    
+            <section class="team-section">
+                <h2>Pubdok</h2>
+                <div class="team-row">
+                    <div class="team-member">
+                        <img src="foto12.jpg" alt="Pubdok 1">
+                    </div>
+                    <div class="team-member">
+                        <img src="foto13.jpg" alt="Pubdok 2">
+                    </div>
+                    <div class="team-member">
+                        <img src="foto14.jpg" alt="Pubdok 3">
+                    </div>
+                </div>
+            </section>
+    
+            <section class="team-section">
+                <h2>Konsumsi</h2>
+                <div class="team-row">
+                    <div class="team-member">
+                        <img src="foto15.jpg" alt="Konsumsi 1">
+                    </div>
+                    <div class="team-member">
+                        <img src="foto16.jpg" alt="Konsumsi 2">
+                    </div>
+                </div>
+            </section>
+        </main>
+        
+        <section id="Headline">
+            <!-- Headline Utama -->
+            <div class="Headline-container">
+                <div class="Headline-box">
+                    <h1 class="Headline-title">Berita Utama: KKN KEDUNG HALANG</h1>
+                    <p class="Headline-subtitle" id="update-time">Diperbarui pada: </p>
+                </div>
+            </div>
+        </section>
+        
+        
+            <!-- Berita Lainnya -->
+            <div class="news-scroll-container">
+                <div class="news-grid">
+
+                     <!-- Berita 1 -->
+                     <div class="news-item">
+                        <img src="cek.jpg" alt="Keamanan Siber" class="news-image">
+                        <h2 class="news-title">Pelepasan Mahasiswa KKN 2023</h2>
+                        <p class="news-description">Rektor UIKA melepas 972 mahasiswa </p>
+                        <a href="https://uika-bogor.ac.id/berita/jalankan-program-membangun-desa-rektor-uika-lepas-972-mahasiswa-jalankan-program-kkn-di-tahun-2023" 
+                        class="news-link" target="_blank" rel="noopener noreferrer">
+                            Baca Selengkapnya
+                        </a>
+                    </div>
+                   
+                    <!-- Berita 2 -->
+                    <div class="news-item">
+                        <img src="testt.jpg" alt="Tren Teknologi" class="news-image">
+                        <h2 class="news-title">Giat Bersih</h2>
+                        <p class="news-description">Gadget terbaru dan teknologi </p>
+                        <a href="https://www.cnnindonesia.com/nasional/20230817105808-22-987179/foto-khidmat-pengibaran-bendera-merah-putih-di-kali-ciliwung-bogor/amp" 
+                        class="news-link" target="_blank" rel="noopener noreferrer">
+                            Baca Selengkapnya
+                        </a>
+                    </div>
+
+                    <!-- Berita 3 -->
+                    <div class="news-item">
+                    <img src="cnn.jpg" alt="Ekonomi Digital" class="news-image">
+                    <h2 class="news-title">Sungai Ciliwung</h2>
+                    <p class="news-description">Digitalisasi ekonomi memacu
+                        perkembangan </p>
+                    
+                    <a href="https://www.rri.co.id/daerah/324799/aktivis-sungai-ciliwung-kita-belum-merdeka-dari-sampah" class="news-link" target="_blank" rel="noopener noreferrer">
+                        Baca Selengkapnya
+                    </a>
+                </div>
+
+                    <!-- Berita 4 -->
+                    <div class="news-item">
+                        <img src="upacara.jpg" alt="Ekonomi Digital" class="news-image">
+                        <h2 class="news-title">Upacara Bendera</h2>
+                        <p class="news-description">Digitalisasi ekonomi memacu pertumbuhan </p>
+                        <a href="https://www.rri.co.id/daerah/324799/aktivis-sungai-ciliwung-kita-belum-merdeka-dari-sampah" class="news-link" target="_blank" rel="noopener noreferrer">
+                            Baca Selengkapnya
+                        </a>
+                    </div>
+            </div>
+        </section>
+      
+        <section id="youtube-section">
+            <div class="video-kkn">
+                <h1 class="video-title"></h1>
+                <div class="video-frame" onclick="playVideo()">
+                    <iframe id="youtube-video" 
+                        src="https://www.youtube.com/embed/_EsigLzzLyw?enablejsapi=1" 
+                        frameborder="0" 
+                        allow="autoplay; encrypted-media" 
+                        allowfullscreen>
+                    </iframe>
+                    <div class="overlay">
+                        <button class="play-button">▶</button>
+                    </div>
+                </div>
+            </div>
+          
+             <!-- Video Kedua -->
+<div class="video-kkn">
+    <h1 class="video-title"></h1>
+    <div class="video-frame" onclick="playVideo2()">
+        <iframe id="youtube-video2" 
+            src="https://www.youtube.com/embed/9O-XExs4DA4?enablejsapi=1" 
+            frameborder="0" 
+            allow="autoplay; encrypted-media" 
+            allowfullscreen>
+        </iframe>
+        <div class="overlay">
+            <button class="play-button">▶</button>
+        </div>
+    </div>
+</div>
+
+        </section>
+
+      
+
+        <!-- Footer Section -->
+    <section id="contact" class="Contact">
+    <footer class="footer"> 
+        <div class="container">
+            <!-- Image Section -->
+            <div class="footer-image">
+            <img src="kkn/EMBLEM.PNG" alt="KKN Kedung Halang" class="footer-img">
+            </div> 
+
+            
+            <!-- Contact Information -->
+            <div class="footer-column">
+                <h3>KKN KEDUNG HALANG</h3>
+                <p>Location: Jl.raya Pemda kedunghalang RT.02/RW.10, <br> Kedunghalang, Kec. Bogor Utara, Kota Bogor, Jawa Barat 16158</p>
+            </div>
+            
+                <!-- Social Media Links -->
+            <div class="footer-column">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    
+                    <a href="https://www.instagram.com/berlyan_g?igsh=MXZxemNqMnZ5NWVoMA==" target="_blank"><i class='bx bxl-instagram'></i></a>
+                    <a href="https://www.youtube.com/@berlyangumay3928" target="_blank"><i class='bx bxl-youtube'></i></a>
+                </div>
+            </div>
+    
+                
+        <!-- Footer Bottom -->
+        <div class="footer-bottom">
+            <p>&copy; 2024 Berlyan Gumay. All Rights Reserved.</p>
+        </div>
+    </footer>
+                
+        <script>
+            window.addEventListener('scroll', function() {
+                const header = document.querySelector('.header');
+                header.classList.toggle('scrolled', window.scrollY > 0);
+            });
+             // Function to add 'show' class when element is in view
+    function revealOnScroll() {
+        const sections = document.querySelectorAll('.team-section');
+
+        sections.forEach(section => {
+            const sectionTop = section.getBoundingClientRect().top;
+            const windowHeight = window.innerHeight;
+            
+            if (sectionTop < windowHeight - 50) {
+                section.classList.add('show');
+            }
+        });
+    }
+
+    window.addEventListener('scroll', revealOnScroll);
+        </script>
+
+        <script>
+    function updateDateTime() {
+        const days = ['Minggu', 'Senin', 'Selasa', 'Rabu', 'Kamis', 'Jumat', 'Sabtu'];
+        const months = [
+            'Januari', 'Februari', 'Maret', 'April', 'Mei', 'Juni', 
+            'Juli', 'Agustus', 'September', 'Oktober', 'November', 'Desember'
+        ];
+
+        const now = new Date();
+        const day = days[now.getDay()];
+        const date = now.getDate();
+        const month = months[now.getMonth()];
+        const year = now.getFullYear();
+        const hours = now.getHours().toString().padStart(2, '0');
+        const minutes = now.getMinutes().toString().padStart(2, '0');
+
+        const formattedTime = `${day}, ${date} ${month} ${year} - ${hours}:${minutes}`;
+        document.getElementById('update-time').textContent = `Diperbarui pada: ${formattedTime}`;
+    }
+
+    updateDateTime();
+</script>
+<script>
+    function updateDateTime() {
+        const days = ['Minggu', 'Senin', 'Selasa', 'Rabu', 'Kamis', 'Jumat', 'Sabtu'];
+        const months = [
+            'Januari', 'Februari', 'Maret', 'April', 'Mei', 'Juni', 
+            'Juli', 'Agustus', 'September', 'Oktober', 'November', 'Desember'
+        ];
+
+        const now = new Date();
+        const day = days[now.getDay()];
+        const date = now.getDate();
+        const month = months[now.getMonth()];
+        const year = now.getFullYear();
+        const hours = now.getHours().toString().padStart(2, '0');
+        const minutes = now.getMinutes().toString().padStart(2, '0');
+        const seconds = now.getSeconds().toString().padStart(2, '0'); // Menambahkan detik
+
+        const formattedTime = `${day}, ${date} ${month} ${year} - ${hours}:${minutes}:${seconds}`;
+        document.getElementById('update-time').textContent = `Diperbarui pada: ${formattedTime}`;
+    }
+
+    // Update waktu setiap detik
+    setInterval(updateDateTime, 1000);
+</script>
+
+<script>
+    function playVideo() {
+        const iframe = document.getElementById('youtube-video');
+        iframe.contentWindow.postMessage('{"event":"command","func":"playVideo","args":""}', '*');
+        document.querySelector('.overlay').style.display = 'none';
+    }
+
+</script>
+
+<script>
+    function playVideo2() {
+        const video2 = document.getElementById("youtube-video2");
+        video2.src += "&autoplay=1";
+    }
+</script>
+
+
+</body>
+
+</html>
