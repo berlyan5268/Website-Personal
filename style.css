@@ -72,8 +72,8 @@ body {
 }
 
 .home {
-    padding-top: 150px;
-    padding-bottom: 100px;
+    padding-top: 180px; /* Posisi lebih turun */
+    padding-bottom: 120px; /* Perpanjang bagian bawah */
     text-align: center;
     background-color: #031540;
     color: white;
@@ -100,8 +100,29 @@ body {
     margin-bottom: 20px;
 }
 
+.home-buttons {
+    margin-top: 20px; /* Tambahkan jarak di bawah teks */
+}
+
+.home-buttons a {
+    display: inline-block;
+    margin: 0 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: #00abf0;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.home-buttons a:hover {
+    background-color: #008dc9;
+}
+
 .home-image {
     text-align: center;
+    margin-top: 30px; /* Tambahkan jarak gambar dari teks */
 }
 
 .home-image img {
@@ -131,13 +152,13 @@ body {
 /* Media Queries */
 @media only screen and (max-width: 768px) {
     .home {
-        padding-top: 100px;
-        padding-bottom: 50px;
+        padding-top: 120px; /* Turunkan sedikit untuk layar kecil */
+        padding-bottom: 80px; /* Tambahkan panjang bawah */
     }
 
     .home-content {
         padding: 10px;
-        max-height: 70vh; /* Batasi tinggi konten untuk layar kecil */
+        max-height: 75vh; /* Sedikit lebih panjang */
         overflow-y: auto; /* Tambahkan scroll jika melebihi batas */
     }
 
@@ -156,6 +177,15 @@ body {
         margin-bottom: 10px;
     }
 
+    .home-buttons {
+        margin-top: 15px; /* Sesuaikan jarak tombol */
+    }
+
+    .home-buttons a {
+        font-size: 14px;
+        padding: 8px 16px; /* Perkecil ukuran tombol */
+    }
+
     .home-image {
         width: 300px; /* Kurangi ukuran gambar di layar kecil */
         height: 300px;
@@ -167,6 +197,7 @@ body {
         height: auto;
     }
 }
+
 
 /* Base Styles */
 body {
