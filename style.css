@@ -274,72 +274,45 @@ body {
     transform: scale(1.1);
 }
 
+/* Home Section */
 .home {
     height: 100vh;
-    background: linear-gradient(-90deg, #031540 65%,#fff 35%);
+    background: linear-gradient(-90deg, #031540 65%, #fff 35%);
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    padding: 100px 10%;
-    padding-top: 150px; /* Memberikan jarak dari navbar */
+    padding: 50px 10%;
+    padding-top: 100px; /* Memberikan jarak dari atas */
 }
 
+/* Kontainer gambar lingkaran */
 .home-image {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 500px;
-    height: 500px;
-    background: #031540;
-    border-radius: 50%;
-    border: 25px solid #fff;
-    outline: 25px solid #031540;
-}
-
-/* Container untuk gambar */
-.image-container {
+    width: 400px; /* Diameter lingkaran */
+    height: 400px;
+    background: #fff;
+    border-radius: 50%; /* Membuat bentuk lingkaran */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Bayangan lingkaran */
+    overflow: hidden; /* Pastikan gambar tidak keluar dari lingkaran */
+    border: 5px solid #031540; /* Border lingkaran */
     position: relative;
-    overflow: hidden;
-    display: inline-block;
-    border: 5px solid #fff; /* Tambahkan border putih */
-    border-radius: 10px; /* Membulatkan sudut */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Tambahkan bayangan untuk efek kedalaman */
 }
 
-/* Gambar dengan efek zoom */
+/* Gambar */
 .zoom-image {
-    display: block;
     width: 100%;
-    height: auto;
+    height: 100%;
+    object-fit: cover; /* Memastikan gambar memenuhi lingkaran */
+    object-position: center top; /* Fokus pada bagian tengah atas gambar */
     transition: transform 0.5s ease, filter 0.5s ease;
 }
 
-/* Efek zoom saat hover */
-.image-container:hover .zoom-image {
-    transform: scale(1.2); /* Zoom gambar 20% lebih besar */
-    filter: brightness(1.1); /* Sedikit cerahkan gambar saat zoom */
-}
-
-/* Efek zoom-in dan fade-in */
-@keyframes zoomIn {
-    from {
-        transform: scale(0.95);
-        opacity: 0;
-    }
-    to {
-        transform: scale(1);
-        opacity: 1;
-    }
-}
-
-.home-image img {
-    position: relative;
-    max-width: 550px;
-}
-
-.home-image:hover img {
-    transform: scale(1.2); /* Zoom gambar 20% lebih besar */
-    filter: brightness(1.1); /* Sedikit cerahkan gambar saat zoom */
+/* Efek hover */
+.home-image:hover .zoom-image {
+    transform: scale(1.1); /* Zoom gambar saat hover */
+    filter: brightness(1.1); /* Efek cerah saat hover */
 }
 
 
